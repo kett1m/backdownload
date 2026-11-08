@@ -8,6 +8,7 @@ case "$1" in
   reset) BD_DESCRIPTION=$BD_DEFAULT ;;
   unavailable) BD_DESCRIPTION='⚠️ No live policy response. Tap Action to retry.' ;;
   inactive) BD_DESCRIPTION='Module inactive. Policy not verified.' ;;
+  oneos) bd_oneos_probe; bd_oneos_text; exit 0 ;;
   '') bd_description ;;
   *) exit 1 ;;
 esac

@@ -1,6 +1,6 @@
 id=dmc_at_zygisk
 name=backdownload
-version=1.0.6
-versionCode=106
+version=v1.0.8
+versionCode=10008
 author=ducttape3
-description=Unlocks Download Mode on Samsung devices. Tap Action to check the policy.
+description=Unlocks Download Mode on Samsung devices and returns there whenever a OneOS guest switch fails. Tap Action to check the policy.

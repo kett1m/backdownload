@@ -10,6 +10,8 @@ if [ "$(id -u)" != 0 ]; then
   printf 'Root is required to check the policy.\n'
   exit 1
 fi
+bd_oneos_probe
+printf '%s\n\n' "$(bd_oneos_text)"
 if [ -e "$MODDIR/disable" ] || [ -e "$MODDIR/remove" ]; then
   sh "$MODDIR/update-status.sh" >/dev/null 2>&1
   printf 'Module disabled. Current policy is not verified.\n'
